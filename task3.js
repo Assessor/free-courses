@@ -33,4 +33,4 @@ if (seconds > 0) {
     result += seconds + suffixNum(seconds, [' секунда ', ' секунды ', ' секунд ']);
 }
 
-process.stdout.write('NO');
+process.stdout.write(result);
