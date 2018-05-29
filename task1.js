@@ -1,3 +1,6 @@
+/* Task 1 */
+
+/* Put your code here */
 let str = '';
 process.argv.forEach((val, index) => {
     if (index > 1) {

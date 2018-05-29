@@ -1,3 +1,6 @@
+/* Task 2 */
+
+/* Put your code here */
 const d = process.argv[2];
 const mStr = process.argv[3];
 const y = process.argv[4];
