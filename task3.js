@@ -5,7 +5,6 @@ const a = process.argv[2];
 const b = process.argv[3];
 const sec = parseInt(a) + parseInt(b);
 
-const years = Math.floor(sec / 31536000);
 const days = Math.floor((sec % 31536000) / 86400); 
 const hours = Math.floor(((sec % 31536000) % 86400) / 3600);
 const minutes = Math.floor((((sec % 31536000) % 86400) % 3600) / 60);
@@ -16,10 +15,6 @@ function suffixNum (n, words) {
 }
 
 let result = '';
-if (years > 0) {
-    result += years + suffixNum(years, [' год ', ' года ', ' лет ']);
-}
-
 if (days > 0) {
     result += days + suffixNum(days, [' день ', ' дня ', ' дней ']);
 }
