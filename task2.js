@@ -5,8 +5,8 @@ const d = process.argv[2];
 const mStr = process.argv[3];
 const y = process.argv[4];
 
-const tmp = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря']
-const m = tmp.indexOf(mStr);
+const tmp = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'];
+const m = tmp.indexOf(mStr.toLowerCase());
 
 const day = new Date(y, m, d); 
 const newYear = new Date(y, 11, 31);
