@@ -1,8 +1,8 @@
 /* Task 3 */
 
 /* Put your code here */
-const a = process.argv[2];
-const b = process.argv[3];
+const a = process.argv[1];
+const b = process.argv[2];
 const sec = parseInt(a) + parseInt(b);
 
 const days = Math.floor((sec % 31536000) / 86400); 
