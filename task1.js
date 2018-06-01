@@ -4,7 +4,7 @@
 let str = '';
 process.argv.forEach((val, index) => {
     if (index >= 1) {
-        str += val.replace(/[.,\/#!?$%\^&\*\'\";:{}=\-_`~()]/g,"").toUpperCase();
+        str += val.replace(/.!?/g, "").toUpperCase();
     }    
 });
 
