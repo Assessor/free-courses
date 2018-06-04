@@ -3,7 +3,7 @@
 /* Put your code here */
 let str = '';
 process.argv.forEach((val, index) => {
-    if (index >= 1) {
+    if (index > 1) {
         str += val.replace(/[^a-zA-Zа-яА-Я]/g, '').toUpperCase();
     }    
 });
