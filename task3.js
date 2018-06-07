@@ -6,7 +6,7 @@ const b = process.argv[3];
 const sec = parseInt(a) + parseInt(b);
 
 const days = Math.floor((sec % 31536000) / 86400); 
-const hours = Math.floor(((sec % 31536000) % 86400) / 3600);
+let hours = Math.floor(((sec % 31536000) % 86400) / 3600);
 const minutes = Math.floor((((sec % 31536000) % 86400) % 3600) / 60);
 const seconds = (((sec % 31536000) % 86400) % 3600) % 60;
 
@@ -20,7 +20,7 @@ const trim = (str) => {
 
 let result = '';
 if (days > 0) {
-    result += days + suffixNum(days, [' день ', ' дня ', ' дней ']);
+    hours = days * 24;
 }
 
 if (hours > 0) {
