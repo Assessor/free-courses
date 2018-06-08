@@ -20,7 +20,7 @@ const trim = (str) => {
 
 let result = '';
 if (days > 0) {
-    hours = days * 24;
+    // hours = days * 24;
 }
 
 if (hours > 0) {
